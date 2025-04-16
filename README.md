@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Social-Media-Web-App
 ## Project
 ###### Social Media Web Application
@@ -44,3 +45,6 @@ Then do npm start
 
 Website should launch locally in browser.
 ### [Documentation](https://github.com/tristingreenstein/Social-Media-Web-Application/wiki/Documentation)
+=======
+# social-media
+>>>>>>> a17eff6fa44fb83de07ab8c914c6511bbbdfded1
