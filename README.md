@@ -1,50 +1,123 @@
-<<<<<<< HEAD
-# Social-Media-Web-App
-## Project
-###### Social Media Web Application
-NOTE ENV KEYS HAVE BEEN STRIPPED, MUST USE OWN KEYS IN ENV AND PROXY INSIDE PACKAGE.JSON
 
-Social media web application clone along the lines of Signal, Facebook, and Twitter. This will include functionality of posting, commenting, and sharing other user’s posts, user authentication, notifications, and private messaging.
-Using React we will able to develope our website, as well as using Node.js to handle package management.
-## Technical Goals
-###### Posts, Comments, Sharing:
-Users will be able to custom tailor a ”post” to be accessible from other devices. A post will be described as a text or image upload.
-The author of the post as well as other users of the web application will be able to “comment” on existing posts. Comment defined as text or image response. 
-Users will be able to “share” an existing post. Share is defined as posting a link or iframe instance of the other post.
-###### User Authentication:
-Users will be able to login with their specific data to access posting, commenting, and sharing functionality.
-We aim to utilize JWT for authentication rather than using external libraries such as Passport.js
-Users' data will be stored in a database(MongoDB tentatively) to allow for recalling of existing post and profile pages.
-###### Notifications:
-Users will be notified through email and or browser for comments or shares on an existing post.
-Users can turn on or off notifications on publication of posts.
-## Languages/Frameworks
-React.js
-REST API
-HTML
-CSS
-JavaScript
-BCrypt
+# 🌐 Social Media Web Application
 
-## Database
-MongoDB
+A feature-rich, full-stack social media platform inspired by modern networks like Facebook, Twitter, and Signal. Built with **React.js**, **Node.js**, and **MongoDB**, this project enables seamless user interaction through posts, comments, shares, messaging, and real-time notifications.
 
-# How to Start:
+> ⚠️ **Note:** Environment variables and secret keys have been removed for security. Please configure your own `.env` file and proxy settings in `package.json` to run locally.
 
-https://nodejs.org/en/download/
+---
 
-Download and run node js.
+## 🔧 Features
 
-Open folder and navigate to client folder.
+### ✍️ Posts, Comments & Sharing
+- Create rich text or image-based posts
+- Comment on any post with text or media
+- Share others' posts using direct references or embeds
 
-From here open terminal and do npm i
+### 🔐 Authentication & Security
+- User registration & login with **JWT-based authentication**
+- Secure password hashing using **BCrypt**
+- Session management without third-party auth providers
 
-You might need to install a few packages
+### 📢 Notifications
+- Receive in-browser or email notifications on comments or shares
+- Configurable notification settings per user
 
-Then do npm start
+### 💬 Messaging *(Planned)*
+- Private one-on-one chat between users *(coming soon)*
 
-Website should launch locally in browser.
-### [Documentation](https://github.com/tristingreenstein/Social-Media-Web-Application/wiki/Documentation)
-=======
-# social-media
->>>>>>> a17eff6fa44fb83de07ab8c914c6511bbbdfded1
+---
+
+## 🛠️ Tech Stack
+
+| Frontend | Backend | Database | Auth & Security | Tools |
+|----------|---------|----------|------------------|-------|
+| React.js | Node.js (Express) | MongoDB | JWT, BCrypt | REST API, npm |
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Prerequisites
+- [Node.js & npm](https://nodejs.org/en/download/)
+- MongoDB (local or cloud – e.g., [MongoDB Atlas](https://www.mongodb.com/cloud/atlas))
+
+### 📁 Project Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/adnan-1010/social-media.git
+
+# Navigate to the project directory
+cd social-media
+
+# Move to the client directory
+cd client
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
+> The frontend will be available at `http://localhost:3000`
+
+---
+
+## ⚙️ Environment Setup
+
+Create a `.env` file in the root of your server/client directory and add:
+
+```env
+REACT_APP_API_URL=http://localhost:5000
+REACT_APP_SOME_KEY=your_key_here
+```
+
+Also, update the `"proxy"` key in `package.json` if needed.
+
+---
+
+## 🗃️ Folder Structure
+
+```
+social-media/
+│
+├── client/              # React frontend
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── utils/
+│       └── App.js
+│
+└── server/ *(planned)*  # Backend API with Node.js and Express
+```
+
+---
+
+## 📌 Roadmap
+
+- [x] User authentication (JWT)
+- [x] Post creation & comments
+- [x] Basic share feature
+- [ ] Private messaging
+- [ ] Real-time notifications via WebSocket
+- [ ] Profile customization
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
+---
+
+## 📫 Contact
+
+Made with ❤️ by [Adnan](https://github.com/adnan-1010)  
+Questions or feedback? Drop an issue or connect via GitHub.
+
+---
+
+
